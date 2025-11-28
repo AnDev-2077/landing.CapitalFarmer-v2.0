@@ -1,0 +1,133 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Backgrounds - Dark Theme Foundation */
+    --bg-primary: #000000;
+    /* Main page background */
+    --bg-secondary: #121212;
+    /* Card/section backgrounds */
+    --bg-overlay: rgba(255, 255, 255, 0.05);
+    /* Subtle overlays */
+
+    /* Text - High Contrast for Dark Theme */
+    --text-primary: #FFFFFF;
+    /* Main headings and content */
+    --text-secondary: rgba(255, 255, 255, 0.85);
+    /* Supporting text */
+    --text-muted: #888888;
+    /* Muted text, navigation */
+
+    /* Borders - Subtle Dark Theme */
+    --border-subtle: rgba(255, 255, 255, 0.1);
+    /* Subtle separators */
+    --border-medium: rgba(255, 255, 255, 0.2);
+    /* Standard borders */
+
+    /* MAIN ACCENT COLORS - Brand Colors Only */
+    --brand-primary: #00FFD1;
+    /* Primary brand cyan-green */
+    --brand-hover: rgba(0, 255, 209, 0.1);
+    /* Hover backgrounds */
+    --brand-active: #6FD2C0;
+    /* Active states */
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  body {
+    @apply bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-image:
+      radial-gradient(circle at 50% 0%, rgba(0, 255, 209, 0.05) 0%, transparent 50%),
+      repeating-linear-gradient(0deg, transparent, transparent 1px, transparent 1px, transparent 40px),
+      repeating-linear-gradient(-90deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.02) 1px, transparent 1px, transparent 40px);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+  }
+
+  .btn-primary {
+    background: var(--brand-primary);
+    color: #000000;
+    border: none;
+    border-radius: 0px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .btn-primary:hover {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0, 255, 209, 0.4);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: #FFFFFF;
+    border: 1px solid var(--border-subtle);
+    border-radius: 0px;
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: var(--text-primary);
+  }
+
+  .nav-link {
+    color: var(--text-muted);
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .nav-link:hover {
+    color: var(--brand-primary);
+  }
+
+  .section-padding {
+    @apply py-24 px-6 md:px-12 lg:px-24;
+  }
+
+  .heading-xl {
+    @apply text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6;
+    background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-bold mb-4 text-[var(--text-primary)];
+  }
+}
