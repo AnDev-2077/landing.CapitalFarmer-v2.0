@@ -71,15 +71,6 @@ const Hero = () => {
           {/* Floating Chatbot Card */}
           <div className="relative z-10 w-full max-w-md transform hover:scale-[1.02] transition-transform duration-500">
             <ChatbotCard />
-            
-            {/* Decorative Elements around card */}
-            <div className="absolute -top-10 -right-10 glass-panel p-4 rounded-xl animate-bounce delay-700 hidden md:block">
-              <p className="text-xs font-medium text-white">"The merger grid adds a beautiful layout"</p>
-              <div className="flex items-center gap-2 mt-2">
-                <div className="w-6 h-6 rounded-full bg-gray-500"></div>
-                <span className="text-[10px] text-[var(--text-muted)]">Merry Lin, Design Lead</span>
-              </div>
-            </div>
           </div>
         </div>
 
