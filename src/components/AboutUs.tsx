@@ -20,7 +20,7 @@ const AboutUs = () => {
                 />
                 <div className="absolute bottom-8 left-8 right-8">
                   <div className="glass-panel p-6 rounded-xl border border-[rgba(255,255,255,0.1)]">
-                    <p className="text-white font-medium italic">"Justice consists not in being neutral between right and wrong, but in finding out the right and upholding it."</p>
+                    <p className="text-white font-medium italic">"La justicia no consiste en ser neutral entre lo correcto y lo incorrecto, sino en encontrar lo correcto y defenderlo."</p>
                   </div>
                 </div>
              </div>
@@ -28,20 +28,20 @@ const AboutUs = () => {
         </div>
 
         <div className="space-y-8">
-          <h2 className="heading-lg">Redefining Legal Counsel for the Digital Age</h2>
+          <h2 className="heading-lg">Redfiniendo la asesoria legal para la Era Digital</h2>
           <p className="text-[var(--text-secondary)] text-lg leading-relaxed">
-            At LEXAI, we believe that the future of law lies at the intersection of human expertise and artificial intelligence. Founded in 2024, we set out to disrupt the traditional law firm model by integrating advanced AI tools into our workflow.
+            En Capital&Farmer, creemos que el futuro de la legalidad se encuentra en la intersección de la experiencia humana y la inteligencia artificial. Fundada en 2024, nos propusimos desafiar el modelo tradicional de la firma legal integrando herramientas avanzadas de IA en nuestro flujo de trabajo.
           </p>
           <p className="text-[var(--text-secondary)] text-lg leading-relaxed">
-            This allows our attorneys to focus on what truly matters: strategic thinking, complex problem-solving, and personal client relationships, while AI handles the heavy lifting of data analysis and document review.
+            Esto nos permite enfocarnos en lo que verdaderamente importa: la pensamiento estratégico, la resolución de problemas complejos y las relaciones con los clientes, mientras que la IA maneja el análisis de datos y la revisión de documentos.
           </p>
 
           <div className="space-y-4 pt-4">
             {[
-              "Data-Driven Legal Strategies",
-              "Transparent & Predictable Pricing",
-              "Global Reach, Local Expertise",
-              "Uncompromising Ethical Standards"
+              "Enfoque estratégico",
+              "Precios transparentes y predecibles",
+              "Experto local",
+              "Estándares éticos incomprometidos"
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <CheckCircle2 className="text-[var(--brand-primary)]" size={20} />
@@ -51,7 +51,7 @@ const AboutUs = () => {
           </div>
 
           <button className="btn-secondary mt-6">
-            Read Our Story
+            Nuestra Historia
           </button>
         </div>
       </div>

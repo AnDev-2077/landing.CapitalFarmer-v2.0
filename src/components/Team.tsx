@@ -57,12 +57,12 @@ const Team = () => {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="max-w-2xl">
-            <h2 className="heading-lg">Meet Our Experts</h2>
+            <h2 className="heading-lg">Equipo</h2>
             <p className="text-[var(--text-secondary)] text-lg">
-              A diverse team of legal minds dedicated to your success.
+              Un equipo diverso de abogados dedicados a tu éxito.
             </p>
           </div>
-          <button className="btn-secondary">View All Attorneys</button>
+          <button className="btn-secondary">Ver todos los abogados</button>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">

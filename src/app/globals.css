@@ -31,6 +31,8 @@
     /* Hover backgrounds */
     --brand-active: #6FD2C0;
     /* Active states */
+    --brand-dark-1: #0A2421;   /* verde-petróleo muy oscuro */
+    --brand-dark-2: #113734;   /* verde marino apagado */
 
     /* Glassmorphism */
     --glass-bg: rgba(255, 255, 255, 0.03);
