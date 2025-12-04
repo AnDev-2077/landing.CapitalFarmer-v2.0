@@ -18,15 +18,6 @@ const Contact = () => {
               </p>
 
               <div className="space-y-8">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-lg bg-[rgba(255,255,255,0.05)] flex items-center justify-center flex-shrink-0 text-[var(--brand-primary)]">
-                    <MapPin size={24} />
-                  </div>
-                  <div>
-                    <h4 className="text-white font-semibold mb-1">Visitanos</h4>
-                    <p className="text-[var(--text-secondary)]">100 Legal Plaza, Suite 400<br />New York, NY 10001</p>
-                  </div>
-                </div>
 
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[rgba(255,255,255,0.05)] flex items-center justify-center flex-shrink-0 text-[var(--brand-primary)]">
