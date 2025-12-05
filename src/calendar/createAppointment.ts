@@ -7,14 +7,14 @@ export async function createAppointment(name: string, email: string, datetime: s
   const calendar = await getCalendarClient();
 
   const start = dayjs(datetime);
-  const end = start.add(duration, "minute");
+  const end = start.add(20, "minute");
 
   const event = {
     summary: `Cita con ${name}`,
     description: `Reserva realizada por el bot`,
     start: { dateTime: start.toISOString(), timeZone: "America/Lima" },
     end: { dateTime: end.toISOString(), timeZone: "America/Lima" },
-    attendees: [{ email }],
+    // attendees: [{ email }],
   };
 
   const response = await calendar.events.insert({

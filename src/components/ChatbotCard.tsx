@@ -150,7 +150,7 @@ export const ChatInterface: React.FC = () => {
           </div>
           <div>
             <h3 className="text-sm font-semibold text-white tracking-wide">
-              AI Legal
+              IA
             </h3>
             <p className="text-xs text-slate-400">Asistente AI • En Linea</p>
           </div>

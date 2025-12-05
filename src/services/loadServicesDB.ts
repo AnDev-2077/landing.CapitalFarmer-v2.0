@@ -16,6 +16,8 @@ export async function loadServicesDB(): Promise<void> {
     if (servicesDB.length > 0) return;
 
     try {
+        
+
         const auth = new google.auth.GoogleAuth({
             keyFile: process.env.SERVICE_ACCOUNT_KEYFILE_PATH,
             scopes: ['https://www.googleapis.com/auth/spreadsheets.readonly'],

@@ -1,28 +1,51 @@
-export const calendarFunctions = [
+// calendarFunctions.ts
+import { FunctionDeclaration, Type } from '@google/genai';
+
+export const calendarFunctions: FunctionDeclaration[] = [
   {
     name: "checkAvailability",
-    description: "Consulta la disponibilidad de Google Calendar para una fecha específica",
+    description: "Verifica la disponibilidad de horarios.",
     parameters: {
-      type: "object",
+      type: Type.OBJECT,
       properties: {
-        date: { type: "string", description: "Fecha en formato YYYY-MM-DD" },
-        duration: { type: "number", description: "Duración en minutos de la cita", default: 30 }
+        date: { 
+          type: Type.STRING, 
+          description: "Fecha para verificar disponibilidad." 
+        },
+        duration: { 
+          type: Type.NUMBER, 
+          description: "Duración en minutos.", 
+          default: 30 
+        },
       },
-      required: ["date"]
-    }
+      required: ["date"],
+    },
   },
   {
     name: "createAppointment",
-    description: "Crea una cita en Google Calendar",
+    description: "Crea una cita en el calendario.",
     parameters: {
-      type: "object",
+      type: Type.OBJECT,
       properties: {
-        name: { type: "string", description: "Nombre del cliente" },
-        email: { type: "string", description: "Correo del cliente" },
-        datetime: { type: "string", description: "Fecha y hora en formato ISO" },
-        duration: { type: "number", description: "Duración en minutos", default: 30 }
+        name: { 
+          type: Type.STRING, 
+          description: "Nombre del cliente." 
+        },
+        email: { 
+          type: Type.STRING, 
+          description: "Correo electrónico del cliente." 
+        },
+        datetime: { 
+          type: Type.STRING, 
+          description: "Fecha y hora de la cita." 
+        },
+        duration: { 
+          type: Type.NUMBER, 
+          description: "Duración en minutos.", 
+          default: 30 
+        },
       },
-      required: ["name", "email", "datetime"]
-    }
-  }
+      required: ["name", "email", "datetime"],
+    },
+  },
 ];
